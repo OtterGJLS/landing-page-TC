@@ -1,0 +1,361 @@
+/* Hero Section */
+#hero {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    min-height: 600px;
+    color: var(--white);
+    position: relative;
+    display: flex;
+    /* background-size: cover; */
+    align-items: center;
+    background: 
+        linear-gradient(to right, #0048AD 45%, rgba(255, 255, 255, 0.1)), 
+        url("/public/images/BG.png") no-repeat center right;
+}
+
+#hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    object-fit: contain;
+}
+
+.btn-primary-custom {
+    background-color: #ffffff; 
+    color: #0048AD;            
+    border: 1px solid #0048AD; 
+    padding: 10px 60px;        
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--neutral);
+    color: var(--primary);
+    filter: brightness(70%);
+}
+
+/* End Hero Section */
+
+
+/*tantangan Section */
+#tantangan {
+    background-color: #ffffff; 
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.tantangan-icon {
+    max-width: fit-content;
+    object-fit: contain;
+}
+
+/* Styling untuk Callout Box di bagian bawah */
+.callout-box {
+    background-color: var(--neutral-light);
+    border: 1px solid #0E67CD;
+    border-radius: var(--border-radius);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.callout-image {
+    position: absolute;
+    bottom: 20px;
+    right: 50px; 
+    max-width: 220px; 
+    height: auto;
+}
+/* End tantangan Section */
+
+/* program Section */
+#program {
+    background-color: #ffffff;
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+#program .card {
+    border: 1px solid #0E67CD;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    height: 100%;
+}
+
+#program .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+#program .card img {
+    max-width: fit-content;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+#program .btn-primary {
+    padding: 14px 40px;
+    font-size: 16px;
+}
+/* End program Section */
+
+/* Clients Section */
+#clients {
+    background-color: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+#clients .client-logos img {
+    height: 45px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: var(--transition);
+    margin: 1rem 1.5rem;
+}
+
+#clients .client-logos img:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+/* End Clients Section */
+
+/* Testimoni Section */
+/* Styling untuk Wrapper & Kontrol Glide.js */
+#testimoni {
+    background-color: var(--primary);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Styling untuk judul utama section */
+#testimoni .text-center h2,
+#testimoni .text-center p {
+    color: var(--white);
+}
+.testimonial-card .card-header h5,
+.testimonial-card .card-header small {
+    color: var(--white);
+    font-size: 14px;
+}
+
+.testimonial-card{
+    border: none; 
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+.testimonial-card .card-header {
+    background-color: var(--primary);
+    border-bottom: none; 
+    padding: 1.5rem;
+}
+
+.glide-testimoni {
+    position: relative;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.glide-testimoni .glide__slide {
+    padding: 10px; 
+}
+
+.glide-testimoni .glide__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 1px solid #eee;
+    color: var(--primary);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.glide-testimoni .glide__arrow:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.glide-testimoni .glide__arrow--left {
+    left: -20px;
+}
+
+.glide-testimoni .glide__arrow--right {
+    right: -20px;
+}
+/* End Testimoni Section */
+
+/* Tablet (Layar di bawah 992px) */
+@media (max-width: 991.98px) {
+    #hero {
+        /* Mengubah background menjadi gradien vertikal dari biru ke gambar */
+        background: 
+            /* Lapisan 1: Gradien vertikal dari biru solid ke transparan */
+            linear-gradient(to right, 
+                #0048AD 40%,          
+                rgba(0, 72, 173, 0) 85%  
+            ),
+            
+            /* Lapisan 2: Gambar, diposisikan di tengah */
+            url("/public/images/BG.png") no-repeat center center;
+        
+        background-size: cover;
+        
+        /* Memastikan konten tetap di tengah */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header-1 {
+        font-size: 44px; 
+    }
+    .header-2 {
+        font-size: 32px; 
+    }
+
+    #hero p.body-1 {
+        font-size: 16px; 
+    }
+
+    /* Menyesuaikan padding tombol agar tidak terlalu lebar */
+    .btn-primary-custom {
+        padding: 12px 50px; 
+    }
+    #hero .row {
+        justify-content: center; 
+    }
+
+    #hero .animate-on-scroll {
+        text-align: center !important; 
+    }
+
+    /* Penyesuaian Callout Box */
+    .callout-box {
+        text-align: left;
+        padding: 20px;
+        display: flex;
+    }
+    .callout-image {
+        display: none;
+    }
+}
+
+
+/* Mobile (Layar di bawah 767.98px) */
+@media (max-width: 767.98px) {
+    
+    #hero, #tantangan, #program, #clients, #testimoni {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    /* Penyesuaian Font Global */
+    .header-1 {
+        font-size: 36px; 
+    }
+    .header-2 {
+        font-size: 24px; 
+    }
+    .body-1 {
+        font-size: 14px; 
+    }
+
+    /* Penyesuaian Hero Section */
+
+    .btn-primary-custom {
+        width: 50%; 
+        padding: 12px 0;
+        font-size: 16px;
+    }
+
+    /* Penyesuaian Tantangan Section */
+    #tantangan .col-md-4 {
+        margin-bottom: 20px;
+    }
+    #tantangan .col-md-4:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Penyesuaian Callout Box */
+    .callout-box {
+        padding: 25px; /* Padding lebih kecil lagi untuk mobile */
+    }
+
+    .callout-image {
+        display: none;
+    }
+    
+    /* Penyesuaian Klien Section */
+    #clients .d-flex.flex-wrap img[src*="clients.png"] {
+        height: 150px !important; 
+        padding: 0 !important;
+    }
+
+    #clients .d-flex.flex-wrap img:not([src*="clients.png"]) {
+        height: 50px !important; 
+        padding: 8px !important;
+    }
+
+    /* Penyesuaian Testimoni Section */
+    .glide-testimoni .glide__arrow {
+        display: none;
+    }
+
+    .testimonial-card .card-header img {
+        margin-right: 0;
+        margin-bottom: 1rem; 
+    }
+
+    /* Menambahkan spasi bawah antar kartu testimoni */
+    #testimoni .col-lg-4 {
+        margin-bottom: 24px;
+    }
+     #testimoni .col-lg-4:last-child {
+        margin-bottom: 0;
+    }
+
+}
+
+/* State awal elemen sebelum animasi */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* State awal untuk animasi fade-in-up */
+.fade-in-up {
+    transform: translateY(30px);
+}
+
+/* State awal untuk animasi fade-in-left */
+.fade-in-left {
+    transform: translateX(-30px);
+}
+
+/* State awal untuk animasi fade-in-right */
+.fade-in-right {
+    transform: translateX(30px);
+}
+
+/* State akhir (saat .is-visible ditambahkan oleh JS) */
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Untuk efek staggered (muncul satu per satu) */
+.delay-1 { transition-delay: 100ms; }
+.delay-2 { transition-delay: 200ms; }
+.delay-3 { transition-delay: 300ms; }

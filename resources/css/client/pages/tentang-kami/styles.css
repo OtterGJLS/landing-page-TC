@@ -1,0 +1,281 @@
+/* Hero Section */
+#hero {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    min-height: 600px;
+    color: var(--white);
+    position: relative;
+    display: flex;
+    /* background-size: cover; */
+    align-items: center;
+    background: 
+        linear-gradient(to right, #0048AD 45%, rgba(255, 255, 255, 0.1)), 
+        url("/public/images/BG.png") no-repeat center right;
+}
+
+#hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    object-fit: contain;
+}
+
+.btn-primary-custom {
+    background-color: #ffffff; 
+    color: #0048AD;            
+    border: 1px solid #0048AD; 
+    padding: 10px 60px;        
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--neutral);
+    color: var(--primary);
+    filter: brightness(70%);
+}
+
+/* End Hero Section */
+
+/* About-us Section */
+#about-us {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #ffffff;
+}
+
+.tim-img {
+    border-radius: var(--border-radius);
+}
+/* End About-us Section */
+
+/* goals Section */
+#goals {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #ffffff;
+}
+
+#goals .card {
+    border: none;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+#goals .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+/* End goals Section */
+
+/* Tim Section */
+#tim {
+    background-color: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#tim .card {
+    border: 1px solid #0E67CD;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    height: 100%;
+}
+#tim .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+#tim .card img {
+    max-width: fit-content;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+#tim .card-text {
+    font-size: 14px;
+    color: #0E67CD;
+}
+/* End Tim Section */
+
+/* legalitas Section */
+#legalitas {
+    background-color: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+#legalitas .card {
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    height: 100%;
+}
+
+#legalitas .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+#legalitas .card img {
+    max-width: fit-content;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+#legalitas .btn-primary {
+    padding: 14px 40px;
+    font-size: 16px;
+}
+/* Styling untuk Callout Box di bagian bawah */
+.callout-box {
+    border: 1px solid #d8d8d8;
+    border-radius: var(--border-radius);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Tablet (Layar di bawah 992px) */
+@media (max-width: 991.98px) {
+    #hero {
+        /* Mengubah background menjadi gradien vertikal dari biru ke gambar */
+        background: 
+            /* Lapisan 1: Gradien vertikal dari biru solid ke transparan */
+            linear-gradient(to right, 
+                #0048AD 40%,          
+                rgba(0, 72, 173, 0) 85%  
+            ),
+            
+            /* Lapisan 2: Gambar, diposisikan di tengah */
+            url("/public/images/BG.png") no-repeat center center;
+        
+        background-size: cover;
+        
+        /* Memastikan konten tetap di tengah */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header-1 {
+        font-size: 44px; 
+    }
+    .header-2 {
+        font-size: 32px; 
+    }
+
+    #hero p.body-1 {
+        font-size: 16px; 
+    }
+
+    /* Menyesuaikan padding tombol agar tidak terlalu lebar */
+    .btn-primary-custom {
+        padding: 12px 50px; 
+    }
+    #hero .row {
+        justify-content: center; 
+    }
+
+    #hero .animate-on-scroll {
+        text-align: center !important; 
+    }
+
+    #about-us .row {
+        text-align: justify; 
+    }
+
+    #goals .misi-icon img, #goals .visi-icon img {
+        max-width: 120px; 
+        margin-bottom: 15px; 
+    }
+
+    /* Penyesuaian Callout Box */
+    .callout-box {
+        justify-content: center;
+        text-align: justify;
+    }
+}
+
+
+/* Mobile (Layar di bawah 767.98px) */
+@media (max-width: 767.98px) {
+    
+    #hero,  #legalitas {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    /* Penyesuaian Font Global */
+    .header-1 {
+        font-size: 36px; 
+    }
+    .header-2 {
+        font-size: 24px; 
+    }
+    .body-1 {
+        font-size: 14px; 
+    }
+
+    /* Penyesuaian Hero Section */
+
+    .btn-primary-custom {
+        width: 50%; 
+        padding: 12px 0;
+        font-size: 16px;
+    }
+
+    #goals .card {
+        margin-bottom: 20px; 
+    }
+    #goals .card:last-child {
+        margin-bottom: 0; 
+    }
+    #goals .card .body-1-card {
+        font-size: 16px;
+    }
+    #goals .misi-icon img, #goals .visi-icon img {
+        max-width: 100px; 
+        margin-bottom: 10px; 
+    }
+
+    /* Penyesuaian Callout Box */
+    .callout-box {
+        padding: 25px; /* Padding lebih kecil lagi untuk mobile */
+        text-align: justify;
+    }
+    
+}
+
+/* State awal elemen sebelum animasi */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* State awal untuk animasi fade-in-up */
+.fade-in-up {
+    transform: translateY(30px);
+}
+
+/* State awal untuk animasi fade-in-left */
+.fade-in-left {
+    transform: translateX(-30px);
+}
+
+/* State awal untuk animasi fade-in-right */
+.fade-in-right {
+    transform: translateX(30px);
+}
+
+/* State akhir (saat .is-visible ditambahkan oleh JS) */
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Untuk efek staggered (muncul satu per satu) */
+.delay-1 { transition-delay: 100ms; }
+.delay-2 { transition-delay: 200ms; }
+.delay-3 { transition-delay: 300ms; }

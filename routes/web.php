@@ -20,7 +20,7 @@ Route::controller(HomeController::class)->as('client.')->group(function () {
     // Route untuk halaman klien
     // Nama Route: client.klien
     Route::get('/klien', 'klien')->name('klien');
-    Route::get('/testimoni', 'testimoni')->name('testimoni');
+    Route::get('/tentang-kami', 'tentangKami')->name('tentang-kami');
     
 });
 

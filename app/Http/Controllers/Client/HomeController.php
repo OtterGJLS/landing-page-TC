@@ -18,8 +18,8 @@ class HomeController extends Controller
         return view('client.klien.index');
     }
 
-    public function testimoni(): View
+    public function tentangKami(): View
     {
-        return view('client.home.testimoni');
+        return view('client.tentang-kami.index');
     }
 }

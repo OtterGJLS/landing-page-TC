@@ -54,7 +54,6 @@
 
     <hr/>
 
-    {{-- Featured program Section --}}
     <section id="program">
         <div class="container">
             <div class="text-center mb-5 animate-on-scroll fade-in-up">
@@ -100,11 +99,9 @@
             </div>
         </div>
     </section>
-    {{-- End Featured program Section --}}
 
     <hr/>
 
-    {{-- Partners & Clients Section --}}
     <section id="clients">
         <div class="container">
             <div class="text-center mb-5 animate-on-scroll fade-in-up">
@@ -136,7 +133,6 @@
                 </div> -->
         </div>
     </section>
-    {{-- End Partners & Clients Section --}}
 
 
     <section id="testimoni">
@@ -226,7 +222,6 @@
         </div>
     </section>
 
-    {{-- End testimoni Section --}}
 
     
     @push('css')

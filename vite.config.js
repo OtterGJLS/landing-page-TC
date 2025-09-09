@@ -8,7 +8,7 @@ export default defineConfig({
                 'resources/css/app.css',
                 'resources/js/app.js',
                 'resources/css/client/pages/home/styles.css',
-                'resources/css/client/pages/home/testimoni.css',
+                'resources/css/client/pages/tentang-kami/styles.css',
                 'resources/css/client/pages/klien/styles.css',
             ],
             refresh: true,

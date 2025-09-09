@@ -12,7 +12,7 @@
                 <li class="nav-item ms-lg-3"><a class="nav-link" href="{{ request()->is('/') ? '#program' : route('client.home') . '#program' }}">Program</a></li>
                 <li class="nav-item ms-lg-3"><a class="nav-link" href="{{ route('client.klien') }}">Klien</a></li>
                 <li class="nav-item ms-lg-3"><a class="nav-link" href="{{ request()->is('/') ? '#testimoni' : route('client.home') . '#testimoni' }}">Testimoni</a></li>
-                <li class="nav-item ms-lg-3 disabled"><a class="nav-link" href="{{ route('client.home') }}">Kontak</a></li>
+                <li class="nav-item ms-lg-3 disabled"><a class="nav-link" href="{{ route('client.tentang-kami') }}">Tentang Kami</a></li>
             </ul>
         </div>
     </div>

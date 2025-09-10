@@ -22,4 +22,9 @@ class HomeController extends Controller
     {
         return view('client.tentang-kami.index');
     }
+
+    public function pelatihan(): View
+    {
+        return view('client.pelatihan.index');
+    }
 }

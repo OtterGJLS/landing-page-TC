@@ -1,0 +1,244 @@
+/* Hero Section */
+#hero {
+    background-color: #ffffff;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+#hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: var(--text);
+}
+/* End Hero Section */
+
+/*pendekatan Section */
+#pendekatan {
+    background-color: #ffffff; 
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.pendekatan-icon {
+    max-width: fit-content;
+    object-fit: contain;
+}
+
+/* End pendekatan Section */
+
+/* Metode Section */
+#metode {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+#metode .nav-pills {
+    background-color: #0048AD; 
+    border-radius: 50px;
+    display: inline-flex;
+    padding: 6px;
+    margin-bottom: 40px !important; 
+}
+
+#metode .nav-pills .nav-link {
+    color: #ffffff;
+    border-radius: 50px;
+    font-weight: 500;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+#metode .nav-pills .nav-link.active,
+#metode .nav-pills .show > .nav-link {
+    background-color: #ffffff;
+    color: #0048AD;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Styling untuk kotak informasi di sebelah kanan */
+.info-box {
+    background-color: #0048AD; 
+    color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 20px;
+}
+
+.info-box h5 {
+    margin-bottom: 15px;
+}
+
+.info-box ul {
+    margin-bottom: 0;
+}
+
+
+/* Mengatur gambar agar selalu responsif dan pas */
+#metode .img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.training-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+}
+.training-card .btn {
+    margin-top: auto; 
+}
+.training-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    margin-bottom: 10px; 
+}
+/* End Metode Section */
+
+/* Section CTA */
+#cta {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #0048AD;
+}
+
+.cta-box {
+    color: #ffffff;
+}
+
+.cta-box .btn-primary {
+    background-color: #ffffff;
+    color: #003366;
+    border-color: #ffffff;
+}
+.cta-box .btn-primary:hover {
+    background-color: #0048AD;
+    color: #ffffff;
+}
+
+
+
+@media (max-width: 991.98px) {
+
+    #hero .header-1 {
+        font-size: 40px;
+    }
+    #hero p {
+        font-size: 16px;
+    }
+
+    /* Memberi jarak atas pada kolom info-box saat stacking di tablet */
+    #metode .row .col-lg-6:last-child {
+        margin-top: 30px;
+    }
+    #metode .img-fluid {
+        max-width: 70%; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    #cta .cta-box h2 {
+        font-size: 36px;
+    }
+}   
+
+@media (max-width: 767.98px) {
+    section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    section h2{
+        font-size: 24px !important;
+    }
+
+    #hero {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+    #hero .header-1 {
+        font-size: 32px;
+    }
+    #hero p {
+        font-size: 16px;
+    }
+
+    #pendekatan .pendekatan-icon {
+        max-width: 100px; 
+        height: auto; 
+        display: block; 
+        margin: 0 auto 10px auto; 
+    }
+
+    /* Perkecil tombol tab di mobile */
+    #metode .nav-pills .nav-link {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+    .training-card img {
+        max-width: 60%; 
+        height: auto; 
+        display: block; 
+        margin: 0 auto 15px auto; 
+        object-fit: contain; 
+    }
+
+    .training-card .btn {
+        width: 30%; 
+        display: block; 
+        margin: 0 auto; 
+        font-size: 16px; 
+        padding: 10px 20px;
+    }
+    
+    /* Tombol CTA dibuat vertikal dan full-width di mobile */
+    #cta .cta-box .btn {
+        display: block;
+        width: 100%;
+        max-width: 300px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #cta .cta-box .btn:first-of-type {
+        margin-bottom: 1rem; 
+    }
+}
+
+
+/* State awal elemen sebelum animasi */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* State awal untuk animasi fade-in-up */
+.fade-in-up {
+    transform: translateY(30px);
+}
+
+/* State awal untuk animasi fade-in-left */
+.fade-in-left {
+    transform: translateX(-30px);
+}
+
+/* State awal untuk animasi fade-in-right */
+.fade-in-right {
+    transform: translateX(30px);
+}
+
+/* State akhir (saat .is-visible ditambahkan oleh JS) */
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Untuk efek staggered (muncul satu per satu) */
+.delay-1 { transition-delay: 100ms; }
+.delay-2 { transition-delay: 200ms; }
+.delay-3 { transition-delay: 300ms; }

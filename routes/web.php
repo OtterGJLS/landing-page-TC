@@ -21,6 +21,7 @@ Route::controller(HomeController::class)->as('client.')->group(function () {
     // Nama Route: client.klien
     Route::get('/klien', 'klien')->name('klien');
     Route::get('/tentang-kami', 'tentangKami')->name('tentang-kami');
+    Route::get('/pelatihan', 'pelatihan')->name('pelatihan');
     
 });
 

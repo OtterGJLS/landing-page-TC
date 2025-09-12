@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row align-items-center text-center justify-content-center">
                 
-                <section class="col-lg-7 animate-on-scroll fade-in-left">
+                <section class="col-lg-8 animate-on-scroll fade-in-left">
                     <h1 class="header-1 fw-bold mb-4">Metode Pelatihan Terdepan</h1>
                     <p class="body-1 text-muted mb-4 ">Pengalaman pembelajaran yang fleksibel dan efektif dengan berbagai metode yang disesuaikan kebutuhan perusahaan Anda.</p>
                 </section>

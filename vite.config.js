@@ -10,6 +10,7 @@ export default defineConfig({
                 'resources/css/client/pages/home/styles.css',
                 'resources/css/client/pages/klien/styles.css',
                 'resources/css/client/pages/pelatihan/styles.css',
+                'resources/css/client/pages/sertifikat/styles.css',
                 'resources/css/client/pages/tentang-kami/styles.css',
             ],
             refresh: true,

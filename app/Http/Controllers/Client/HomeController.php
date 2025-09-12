@@ -27,4 +27,9 @@ class HomeController extends Controller
     {
         return view('client.pelatihan.index');
     }
+    
+    public function sertifikat(): View
+    {
+        return view('client.sertifikat.index');
+    }
 }

@@ -1,0 +1,270 @@
+/* Hero Section */
+#hero {
+    background-color: #ffffff;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+#hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: var(--text);
+}
+/* End Hero Section */
+
+/* Sertifikasi Section */
+#sertifikasi {
+    background-color: #ffffff; 
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Kartu Unggulan (BNSP) */
+.sertifikasi-card-featured {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.sertifikasi-card-featured .featured-logo {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.sertifikasi-card-featured .featured-tags {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.sertifikasi-card-featured .tag-item {
+    font-size: 12px;
+    padding: 6px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    color: #6c757d;
+}
+
+/* Kartu Standar (6 kartu lainnya) */
+.sertifikasi-card-standard {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    padding: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    height: 100%;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sertifikasi-card-standard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.sertifikasi-card-standard .standard-logo {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.sertifikasi-card-standard .card-content {
+    flex-grow: 1;
+}
+
+/* Pill / Tag di pojok kanan atas */
+.sertifikasi-pill {
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background-color: #e7f3ff; 
+    color: #007bff;
+}
+/* End Sertifikasi Section */
+
+/* Contoh Sertifikat Section */
+#contoh {
+    background-color: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.sertifikat-display-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 40px 50px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.sertifikat-badge {
+    width: 120x;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.sertifikat-header {
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--primary); 
+}
+
+.sertifikat-subheader {
+    color: #4D6280; 
+    font-size: 1rem;
+}
+
+.sertifikat-nama {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.sertifikat-judul-pelatihan {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--primary);
+    margin-top: 0.5rem;
+}
+
+.sertifikat-info-label {
+    margin-bottom: 0;
+    font-size: 0.875rem; 
+    color: #4D6280;
+}
+
+.sertifikat-info-value {
+    margin-bottom: 0;
+    font-weight: 500;
+    color: #4D6280;
+}
+/* End Contoh Sertifikat Section */
+
+/* Proses Validasi Section */
+#proses-validasi {
+    background-color: var(--primary);
+    padding: 80px 0;
+    color: #ffffff;
+}
+
+.proses-step .step-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 24px;
+    font-weight: bold;
+    border: 3px solid #0048AD;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+/* End Proses Validasi Section */
+
+
+/* Responsif */
+@media (max-width: 991.98px) {
+    /* Hero Section */
+    #hero h1 {
+        font-size: 40px;
+    }
+    #hero p {
+        font-size: 18px;
+    }
+
+    /* Sertifikasi Section  */
+    .sertifikasi-card-featured .featured-logo {
+        height: 80px; 
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    /*  Pengaturan Umum Section  */
+    section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .header-2 {
+        font-size: 28px;
+    }
+
+    /* Hero Section */
+    #hero {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+    #hero h1 {
+        font-size: 32px;
+    }
+    #hero p {
+        font-size: 16px;
+    }
+
+    /* Sertifikasi Section */
+    .sertifikasi-card-featured .featured-logo {
+        height: 60px; 
+    }
+    .sertifikasi-card-standard {
+        padding: 20px;
+        gap: 15px;
+    }
+    .sertifikasi-card-standard .standard-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Contoh Sertifikat Section */
+    .sertifikat-display-card {
+        padding: 30px 20px;
+    }
+    .sertifikat-nama {
+        font-size: 22px; 
+    }
+    .sertifikat-header {
+        font-size: 20px;
+    }
+    .sertifikat-badge {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Animasi */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in-up { transform: translateY(30px); }
+.fade-in-left { transform: translateX(-30px); }
+.fade-in-right { transform: translateX(30px); }
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: none;
+}
+.delay-1 { transition-delay: 100ms; }
+.delay-2 { transition-delay: 200ms; }
+.delay-3 { transition-delay: 300ms; }

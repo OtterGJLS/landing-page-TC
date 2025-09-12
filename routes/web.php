@@ -22,6 +22,7 @@ Route::controller(HomeController::class)->as('client.')->group(function () {
     Route::get('/klien', 'klien')->name('klien');
     Route::get('/tentang-kami', 'tentangKami')->name('tentang-kami');
     Route::get('/pelatihan', 'pelatihan')->name('pelatihan');
+    Route::get('/sertifikat', 'sertifikat')->name('sertifikat');
     
 });
 

@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="text-center mt-5">
-                <a href="#" class="btn btn-primary btn-lg">Lihat Semua Program</a>
+                <a href="{{ route('client.layanan') }}" class="btn btn-primary btn-lg">Lihat Semua Program</a>
             </div>
         </div>
     </section>

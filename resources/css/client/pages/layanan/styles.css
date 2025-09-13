@@ -1,0 +1,415 @@
+/* Hero Section */
+#hero {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    min-height: 600px;
+    color: var(--white);
+    position: relative;
+    display: flex;
+    /* background-size: cover; */
+    align-items: center;
+    background: 
+        linear-gradient(to right, #0048AD 45%, rgba(255, 255, 255, 0.1)), 
+        url("/public/images/BG.png") no-repeat center right;
+}
+
+#hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    object-fit: contain;
+}
+
+.btn-primary-custom {
+    background-color: #ffffff; 
+    color: #0048AD;            
+    border: 1px solid #0048AD; 
+    padding: 10px 60px;        
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--neutral);
+    color: var(--primary);
+    filter: brightness(70%);
+}
+
+/* End Hero Section */
+
+
+/*manfaat Section */
+#manfaat {
+    background-color: #ffffff; 
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.manfaat-icon {
+    max-width: 40%;
+    object-fit: contain;
+}
+
+/* End manfaat Section */
+
+/* Materi Section  */
+#materi {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.materi-item {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+}
+
+.materi-icon {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.materi-content p {
+    margin-bottom: 0.5rem;
+}
+
+.materi-content ul {
+    list-style: none; 
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.materi-content ul li {
+    padding-left: 20px; 
+    position: relative;
+    margin-bottom: 8px;
+    color: var(--text);
+}
+
+/* Membuat bullet point custom (titik kecil) */
+.materi-content ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px; 
+    width: 6px;
+    height: 6px;
+    background-color: var(--text);
+    border-radius: 50%;
+}
+
+/* Format Section */
+#format {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+.format-card {
+    border: 1px solid #dee2e6;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    height: 100%;
+    background-color: var(--white);
+    transition: all 0.3s ease;
+}
+.format-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+.format-icon {
+    height: 100px;
+    margin-bottom: 0.5rem;
+}
+/* End Format Section */
+
+/* Outcome Section */
+#outcome {
+    background-color: #ffffff;
+    padding: 80px 0;
+}
+
+.outcome-card {
+    background-color: var(--white);
+    padding: 30px 40px;
+    border-radius: 16px;
+    height: 100%;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* List dengan checkmark di kartu kiri */
+.outcome-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+.outcome-list li {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 15px;
+    color: var(--text);
+}
+.outcome-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* List dengan nomor di kartu kanan */
+.sertifikasi-list {
+    list-style: none;
+    counter-reset: sertifikasi-counter;
+    padding-left: 0;
+}
+.sertifikasi-list li {
+    counter-increment: sertifikasi-counter;
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 15px;
+    color: var(--text);
+}
+.sertifikasi-list li::before {
+    content: counter(sertifikasi-counter) ".";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Gambar pratinjau sertifikat */
+.sertifikat-preview-img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.sertifikat-preview-img:hover {
+    transform: translateY(-5px);
+}
+/* End Format Section */
+
+/* Impact Section */
+#impact {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.testimonial-avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 6px solid var(--neutral);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-quote {
+    font-style: italic;
+    color: var(--text);
+    max-width: 400px; 
+    margin: 1rem auto 0 auto;
+}
+
+.impact-card-new {
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primary);
+    min-width: 160px; 
+}
+.impact-card-new-2 {
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--success);
+    min-width: 160px; 
+}
+
+.impact-card-new span {
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--text);
+}
+.impact-card-new-2 span {
+    font-size: 16px;
+    font-weight: normal;
+    color: var(--text);
+}
+/* End Impact Section */
+
+/* Program Lainnya Section */
+#lainnya {
+    background-color: var(--primary);
+    color: var(--white); 
+    padding: 80px 0;
+}
+
+.program-card {
+    background-color: var(--white);
+    border-radius: 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+}
+
+.program-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.program-card-body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.program-card-body h5 {
+    color: #000;
+}
+.program-card-body p {
+    color: var(--text); 
+    flex-grow: 1; 
+}
+
+/* Tombol Solid Biru */
+.program-card .btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    width: 100%;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+/* Tablet (Layar di bawah 992px) */
+@media (max-width: 991.98px) {
+    #hero {
+        /* Mengubah background menjadi gradien vertikal dari biru ke gambar */
+        background: 
+            /* Lapisan 1: Gradien vertikal dari biru solid ke transparan */
+            linear-gradient(to right, 
+                #0048AD 40%,          
+                rgba(0, 72, 173, 0) 85%  
+            ),
+            
+            /* Lapisan 2: Gambar, diposisikan di tengah */
+            url("/public/images/BG.png") no-repeat center center;
+        
+        background-size: cover;
+        
+        /* Memastikan konten tetap di tengah */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header-1 {
+        font-size: 44px; 
+    }
+    .header-2 {
+        font-size: 32px; 
+    }
+
+    #hero p.body-1 {
+        font-size: 16px; 
+    }
+
+    /* Menyesuaikan padding tombol agar tidak terlalu lebar */
+    .btn-primary-custom {
+        padding: 12px 50px; 
+    }
+    #hero .row {
+        justify-content: center; 
+    }
+
+    #hero .animate-on-scroll {
+        text-align: center !important; 
+    }
+}
+
+
+/* Mobile (Layar di bawah 767.98px) */
+@media (max-width: 767.98px) {
+    
+    #hero, #manfaat, #materi, #format, #outcome, #impact, #lainnya {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    /* Penyesuaian Font Global */
+    .header-1 {
+        font-size: 36px; 
+    }
+    .header-2 {
+        font-size: 24px; 
+    }
+    .body-1 {
+        font-size: 14px; 
+    }
+
+    /* Penyesuaian Hero Section */
+
+    .btn-primary-custom {
+        width: 50%; 
+        padding: 12px 0;
+        font-size: 16px;
+    }
+
+    /* Penyesuaian manfaat Section */
+    .manfaat-icon{
+        width: 30%;
+    }
+}
+
+/* State awal elemen sebelum animasi */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* State awal untuk animasi fade-in-up */
+.fade-in-up {
+    transform: translateY(30px);
+}
+
+/* State awal untuk animasi fade-in-left */
+.fade-in-left {
+    transform: translateX(-30px);
+}
+
+/* State awal untuk animasi fade-in-right */
+.fade-in-right {
+    transform: translateX(30px);
+}
+
+/* State akhir (saat .is-visible ditambahkan oleh JS) */
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Untuk efek staggered (muncul satu per satu) */
+.delay-1 { transition-delay: 100ms; }
+.delay-2 { transition-delay: 200ms; }
+.delay-3 { transition-delay: 300ms; }

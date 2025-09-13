@@ -32,4 +32,9 @@ class HomeController extends Controller
     {
         return view('client.sertifikat.index');
     }
+
+    public function layanan(): View
+    {
+        return view('client.layanan.index');
+    }
 }

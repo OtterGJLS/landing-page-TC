@@ -1,0 +1,338 @@
+
+/* HERO SECTION */
+#hero {
+    background-color: var(--white);
+    padding-top: 120px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 20px;
+    color: var(--text);
+}
+
+
+/* RESOURCES SECTION (KONTEN UTAMA) */
+#resources {
+    background-color: var(--white);
+    padding: 60px 0;
+}
+
+/* --- Search Bar --- */
+.input-group .form-control {
+    border-right: 0;
+}
+
+.input-group .form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary);
+}
+
+.input-group .btn-primary {
+    z-index: 2;
+}
+
+/* --- Navigasi Tab (Artikel, Ebook, Webinar) --- */
+#resources .nav-pills {
+    background-color: #e9ecef;
+    border-radius: 8px;
+    display: inline-flex;
+    padding: 5px;
+}
+
+#resources .nav-pills .nav-link {
+    color: var(--text);
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+}
+
+#resources .nav-pills .nav-link.active {
+    background-color: var(--white);
+    color: var(--primary);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* KONTEN TAB: ARTIKEL */
+.artikel-card {
+    display: flex;
+    flex-direction: column; 
+    background-color: var(--white);
+    border-radius: 16px; 
+    height: 100%;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artikel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.artikel-card-img {
+    width: 100%;
+    height: 220px; 
+    object-fit: cover;
+    border-radius: 16px 16px 0 0; 
+}
+
+.artikel-card-body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+}
+
+.artikel-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 13px;
+    color: var(--text);
+}
+
+.artikel-meta .meta-tag {
+    border: 1px solid var(--border-color);
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.artikel-meta i {
+    margin-right: 5px; 
+}
+
+.artikel-footer {
+    margin-top: auto; 
+    padding-top: 15px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.artikel-footer a {
+    text-decoration: none;
+    color: #FFA500;
+}
+
+/* KONTEN TAB: EBOOK */
+.ebook-card {
+    position: relative;
+    background-color: var(--white);
+    border-radius: 16px;
+    height: 100%;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 20px; 
+    display: flex;
+    flex-direction: column; 
+    text-align: center; 
+}
+
+.ebook-tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background-color: #e7f3ff;
+    color: #007bff;
+}
+
+.ebook-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px; 
+    margin-bottom: 20px;
+}
+
+.ebook-card-content {
+    flex-grow: 1; 
+}
+
+.ebook-meta {
+    font-size: 13px;
+    color: var(--text);
+    margin-top: 15px;
+}
+
+.ebook-card .btn i {
+    margin-right: 8px; 
+}
+
+
+
+/* KONTEN TAB: WEBINAR */
+.event-card {
+    background: var(--white);
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.event-header i {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.event-card hr {
+    margin: 15px 0;
+    border-color: var(--border-color);
+}
+
+.event-body {
+    flex-grow: 1; 
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: var(--text);
+}
+
+.detail-row span:last-child {
+    color: #343a40; 
+}
+
+.text-success {
+    color: #198754 !important; 
+}
+
+
+/* KONTEN TAB: WEBINAR (Record Webinar) */
+.record-card {
+    background-color: var(--white);
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.record-thumbnail {
+    position: relative;
+    cursor: pointer;
+}
+
+.record-thumbnail img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px; 
+}
+
+/* Tombol Play di tengah gambar */
+.record-thumbnail .fa-play-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.record-thumbnail:hover .fa-play-circle {
+    transform: translate(-50%, -50%) scale(1.1);
+    color: var(--white);
+}
+
+/* Tag Kategori di pojok kanan atas gambar */
+.record-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background-color: rgba(245, 233, 209, 0.9);
+    color: #FFA500;
+}
+
+.record-body {
+    padding-top: 20px;
+    flex-grow: 1; 
+}
+
+.record-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: var(--text);
+    padding: 15px 0;
+}
+
+.record-meta span {
+    display: flex;
+    align-items: center;
+}
+
+.record-meta i {
+    margin-right: 6px;
+}
+
+.record-card hr {
+    margin: 0;
+    border-color: var(--border-color);
+}
+
+.record-card .btn {
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.record-card .btn i {
+    margin-right: 8px;
+}
+
+
+/* ANIMASI ON-SCROLL */
+.animate-on-scroll {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-up {
+    transform: translateY(30px);
+}
+
+.fade-in-left {
+    transform: translateX(-30px);
+}
+
+.animate-on-scroll.is-visible {
+    opacity: 1;
+    transform: none;
+}

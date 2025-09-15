@@ -37,4 +37,9 @@ class HomeController extends Controller
     {
         return view('client.layanan.index');
     }
+
+    public function insight(): View
+    {
+        return view('client.insight.index');
+    }
 }

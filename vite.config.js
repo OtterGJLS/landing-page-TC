@@ -13,6 +13,7 @@ export default defineConfig({
                 'resources/css/client/pages/sertifikat/styles.css',
                 'resources/css/client/pages/layanan/styles.css',
                 'resources/css/client/pages/tentang-kami/styles.css',
+                'resources/css/client/pages/kontak/styles.css',
             ],
             refresh: true,
         }),

@@ -42,4 +42,9 @@ class HomeController extends Controller
     {
         return view('client.insight.index');
     }
+
+    public function kontak(): View
+    {
+        return view('client.kontak.index');
+    }
 }

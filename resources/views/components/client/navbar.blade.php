@@ -15,6 +15,7 @@
                 <li class="nav-item ms-lg-3 disabled"><a class="nav-link" href="{{ route('client.tentang-kami') }}">Tentang Kami</a></li>
                 <li class="nav-item ms-lg-3 disabled"><a class="nav-link" href="{{ route('client.pelatihan') }}">Pelatihan</a></li>
                 <li class="nav-item ms-lg-3 disabled"><a class="nav-link" href="{{ route('client.insight') }}">Insight</a></li>
+                <li class="nav-item ms-lg-3 disabled"><a class="nav-link" href="{{ route('client.kontak') }}">Kontak</a></li>
             </ul>
         </div>
     </div>

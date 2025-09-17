@@ -13,7 +13,7 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Cari artikel, ebook, webinar...">
-                        <button class="btn btn-primary" type="button">
+                        <button class="btn btn-warning" type="button">
                             <i class="fas fa-search me-1"></i>Cari
                         </button>
                     </div>

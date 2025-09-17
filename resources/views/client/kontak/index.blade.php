@@ -17,9 +17,9 @@
             <div class="row gy-5 gx-lg-5 justify-content-center">
 
                 <div class="col-lg-7 col-md-7">
+                    <h4 class="fw-bold">Request for Proposal (RFP)</h4>
+                    <p class="text-muted">Isi form berikut untuk mendapatkan proposal training yang sesuai dengan kebutuhan perusahaan Anda.</p>
                     <div class="form-wrapper animate-on-scroll fade-in-up">
-                        <h4 class="fw-bold">Request for Proposal (RFP)</h4>
-                        <p class="text-muted">Isi form berikut untuk mendapatkan proposal training yang sesuai dengan kebutuhan perusahaan Anda.</p>
                         <form action="#" method="POST" class="mt-4">
                             <div class="row">
                                 <div class="col-md-6 mb-3">
@@ -127,7 +127,7 @@
                             </ul>
                         </div>
 
-                        <div class="whatsapp-card-new text-center animate-on-scroll fade-in-up delay-1">
+                        <div class="whatsapp-card text-center animate-on-scroll fade-in-up delay-1">
                             <i class="fab fa-whatsapp"></i>
                             <h6 class="fw-bold">Chat Via WhatsApp</h6>
                             <p class="small mb-3">Respon lebih cepat dan praktis</p>

@@ -165,10 +165,6 @@
                 </div>
             </div>
 
-            <div class="text-center mt-5 animate-on-scroll fade-in-up">
-                <a href="{{ route('client.sertifikat') }}" class="btn btn-primary btn-lg">Lihat Semua Sertifikasi</a>
-            </div>
-
             <div class="mt-5 animate-on-scroll fade-in-up">
                 <div class="callout-box">
                     <div class="row align-items-center g-3 mb-3">

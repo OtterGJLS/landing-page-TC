@@ -1,6 +1,5 @@
-/* =================================================================== */
-/* HERO SECTION
-/* =================================================================== */
+
+/* HERO SECTION */
 #hero {
     background-color: var(--white);
     padding-top: 120px;
@@ -19,23 +18,22 @@
 }
 
 
-/* =================================================================== */
-/* KONTAK SECTION
-/* =================================================================== */
+
+/* KONTAK SECTION */
 #kontak {
     background-color: var(--white);
     padding: 80px 0;
 }
 
 
-/* --- Formulir (Kolom Kiri) --- */
+/*  Formulir (Kolom Kiri) */
 .form-wrapper {
     background-color: var(--white);
     padding: 35px;
     border-radius: 16px;
     border: 1px solid var(--border-color);
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    height: 100%;
+    height: 90%;
 }
 
 .form-label {
@@ -64,7 +62,7 @@
 }
 
 
-/* --- Info Kontak (Kolom Kanan) --- */
+/* Info Kontak (Kolom Kanan) */
 .info-wrapper {
     height: 100%;
 }
@@ -123,21 +121,21 @@
 }
 
 
-/* --- Kartu WhatsApp --- */
-.whatsapp-card-new {
+/* Kartu WhatsApp */
+.whatsapp-card {
     background-color: var(--success);
     color: var(--white);
     border-radius: 16px;
     padding: 15px 10px;
 }
-.whatsapp-card-new i {
+.whatsapp-card i {
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
-.whatsapp-card-new p {
+.whatsapp-card p {
     color: rgba(255, 255, 255, 0.9);
 }
-.whatsapp-card-new .btn-light-custom {
+.whatsapp-card .btn-light-custom {
     background-color: var(--white);
     color: var(--success);
     border: none;
@@ -146,19 +144,13 @@
 }
 
 
-/* =================================================================== */
-/* PETA SECTION
-/* =================================================================== */
+/* PETA SECTION */
 #peta {
     padding: 0 !important;
     /* Menghapus padding agar peta memenuhi layar */
 }
 
-/* =================================================================== */
-/* RESPONSIVE DESIGN
-/* =================================================================== */
 
-/* --- Tablet (<= 991.98px) --- */
 @media (max-width: 991.98px) {
     #hero h1 {
         font-size: 40px;
@@ -169,7 +161,6 @@
     }
 }
 
-/* --- Mobile (<= 767.98px) --- */
 @media (max-width: 767.98px) {
     section,
     #hero {
@@ -204,9 +195,8 @@
 }
 
 
-/* =================================================================== */
-/* ANIMASI ON-SCROLL
-/* =================================================================== */
+
+/* ANIMASI ON-SCROLL */
 .animate-on-scroll {
     opacity: 0;
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;

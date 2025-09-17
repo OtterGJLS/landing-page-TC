@@ -34,7 +34,7 @@
     border-color: var(--primary);
 }
 
-.input-group .btn-primary {
+.input-group .btn-warning {
     z-index: 2;
 }
 
@@ -315,6 +315,38 @@
 
 .record-card .btn i {
     margin-right: 8px;
+}
+
+/* Responsif */
+@media (max-width: 991.98px) {
+
+    #hero .header-1 {
+        font-size: 40px;
+    }
+    #hero p {
+        font-size: 16px;
+    }
+}   
+
+@media (max-width: 767.98px) {
+    section {
+        padding-top: 60px;
+    }
+    section h2{
+        font-size: 24px !important;
+    }
+
+    #hero {
+        padding-top: 100px;
+        padding-bottom: 60px;
+    }
+    #hero .header-1 {
+        font-size: 32px;
+    }
+    #hero p {
+        font-size: 16px;
+    }
+
 }
 
 
